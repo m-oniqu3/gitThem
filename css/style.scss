@@ -8,6 +8,7 @@
 body {
   font-family: "Rubik", sans-serif;
   font-size: 0.875rem;
+  color: white;
 }
 
 //Variables
@@ -19,12 +20,27 @@ $darkblue: #00023f;
 .btn {
   border: 0;
   border-radius: 5px;
-  padding: 0.3rem 0.5rem;
+  padding: 0.5rem 0.9rem;
   margin-left: 0.5rem;
-  background-color: $darkblue;
-  color: white;
+  //background-color: $darkblue;
+  background: rgba(50, 49, 85, 0.5);
+  backdrop-filter: blur(150px);
   font-weight: 400;
   font-weight: 700;
+  color: white;
+}
+
+p.title {
+  font-size: 1.275rem;
+  font-weight: 700;
+  padding: 1rem 0;
+}
+
+.profile-info,
+.repos {
+  background-color: $darkblue;
+  border-radius: 15px;
+  padding: 1rem;
 }
 
 .container {
@@ -71,7 +87,7 @@ $darkblue: #00023f;
   }
 
   .form-container {
-    background-color: $blue;
+    background-color: $darkblue;
     padding: 1.5rem;
     width: 80%;
     margin: 0 auto;
@@ -107,9 +123,34 @@ $darkblue: #00023f;
       width: 50%;
       margin: 1rem auto;
 
+      button.btn {
+        background-color: $darkblue;
+      }
+
       a {
         color: inherit;
         text-decoration: none;
+      }
+    }
+  }
+
+  //Profile Info
+  .profile-info {
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+
+      .item {
+        //background-color: $blue;
+        padding: 0.8rem;
+        border-radius: 5px;
+        background: rgba(50, 49, 85, 0.5);
+        backdrop-filter: blur(150px);
+      }
+
+      #bio {
+        grid-column: 1/-1;
       }
     }
   }
