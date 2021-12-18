@@ -13,22 +13,41 @@ body {
 }
 
 .btn {
+  background-color: #00023f;
   border: 0;
   border-radius: 5px;
   padding: 0.5rem 0.9rem;
   margin-left: 0.5rem;
-  background: rgba(50, 49, 85, 0.5);
-  -webkit-backdrop-filter: blur(150px);
-          backdrop-filter: blur(150px);
   font-weight: 400;
   font-weight: 700;
   color: white;
 }
 
-p.title {
+.btn:hover,
+.btn:focus {
+  background: rgba(96, 93, 182, 0.801);
+}
+
+.title {
   font-size: 1.275rem;
   font-weight: 700;
-  padding: 1rem 0;
+  padding-bottom: 1rem;
+}
+
+.profile-info,
+.repos {
+  background-color: #00023f;
+  border-radius: 15px;
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+}
+
+.item {
+  padding: 0.8rem;
+  border-radius: 5px;
+  background: rgba(50, 49, 85, 0.5);
+  -webkit-backdrop-filter: blur(150px);
+          backdrop-filter: blur(150px);
 }
 
 .container {
@@ -84,7 +103,7 @@ p.title {
 .container .form-container {
   background-color: #00023f;
   padding: 1.5rem;
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
   border-radius: 10px;
   position: relative;
@@ -102,7 +121,36 @@ p.title {
 .container .form-container form input[type="text"] {
   border: 0;
   border-radius: 5px;
-  padding: 0.3rem 0rem;
+  padding: 0.5rem 0.9rem;
+  width: 100%;
+  font-weight: 700;
+  color: #00023f;
+}
+
+.container .form-container form ::-webkit-input-placeholder {
+  color: #00023f;
+  font-weight: 700;
+}
+
+.container .form-container form :-ms-input-placeholder {
+  color: #00023f;
+  font-weight: 700;
+}
+
+.container .form-container form ::-ms-input-placeholder {
+  color: #00023f;
+  font-weight: 700;
+}
+
+.container .form-container form ::placeholder {
+  color: #00023f;
+  font-weight: 700;
+}
+
+.container .form-container form .btn {
+  background: rgba(50, 49, 85, 0.5);
+  -webkit-backdrop-filter: blur(150px);
+          backdrop-filter: blur(150px);
 }
 
 .container .user-profile {
@@ -130,19 +178,9 @@ p.title {
   margin: 1rem auto;
 }
 
-.container .user-profile button button.btn {
-  background-color: #00023f;
-}
-
 .container .user-profile button a {
   color: inherit;
   text-decoration: none;
-}
-
-.container .profile-info {
-  background-color: #00023f;
-  border-radius: 15px;
-  padding: 1rem;
 }
 
 .container .profile-info .grid {
@@ -153,15 +191,18 @@ p.title {
   gap: 1rem;
 }
 
-.container .profile-info .grid .item {
-  padding: 0.8rem;
-  border-radius: 5px;
-  background: rgba(50, 49, 85, 0.5);
-  -webkit-backdrop-filter: blur(150px);
-          backdrop-filter: blur(150px);
-}
-
 .container .profile-info .grid #bio {
   grid-column: 1/-1;
+}
+
+.container .r-grid {
+  display: -ms-grid;
+  display: grid;
+  gap: 1rem;
+}
+
+.container .r-grid .item:hover,
+.container .r-grid .item:focus {
+  background: rgba(96, 93, 182, 0.801);
 }
 /*# sourceMappingURL=style.css.map */
