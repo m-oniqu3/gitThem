@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 0.875rem;
+}
+
+//Variables
+$blue: #4d53da;
+$lavender: #c6b6ff;
+$darkblue: #00023f;
+
+//Global Styles
+.btn {
+  border: 0;
+  border-radius: 5px;
+  padding: 0.3rem 0.5rem;
+  margin-left: 0.5rem;
+  background-color: $darkblue;
+  color: white;
+  font-weight: 400;
+  font-weight: 700;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 1rem 0;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .name {
+      margin-right: auto;
+      padding: 0 0.5rem;
+      font-weight: 700;
+      font-size: 1rem;
+      color: $darkblue;
+    }
+    .logo {
+      width: 2.5rem;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .attribution {
+      span {
+        font-weight: 700;
+        font-size: 1rem;
+        color: $darkblue;
+      }
+    }
+  }
+
+  .banner {
+    margin-top: 2rem;
+    img {
+      width: 100%;
+      height: 12vh;
+      border-radius: 10px;
+    }
+  }
+
+  .form-container {
+    background-color: $blue;
+    padding: 1.5rem;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+    position: relative;
+    margin-top: -40px;
+
+    form {
+      display: flex;
+      justify-content: space-around;
+
+      input[type="text"] {
+        border: 0;
+        border-radius: 5px;
+        padding: 0.3rem 0rem;
+      }
+    }
+  }
+
+  .user-profile {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2rem 0;
+
+    img {
+      border-radius: 10px;
+      width: 50%;
+      margin: 0 auto;
+    }
+
+    button {
+      width: 50%;
+      margin: 1rem auto;
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+    }
+  }
+}
