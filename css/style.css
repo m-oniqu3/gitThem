@@ -104,12 +104,25 @@ body {
 
 .container .banner {
   margin-top: 2rem;
+  border-radius: 15px;
+  padding: 1rem;
+  background-image: url(/images/banner-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 15vh;
 }
 
-.container .banner img {
-  width: 100%;
-  height: 12vh;
-  border-radius: 10px;
+.container .banner p {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  .container .banner p {
+    font-size: 1.2rem;
+  }
 }
 
 .container .form-container {
