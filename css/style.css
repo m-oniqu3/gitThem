@@ -56,6 +56,18 @@ body {
   padding: 1rem 0;
 }
 
+@media (min-width: 768px) {
+  .container {
+    width: 85%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    width: 60%;
+  }
+}
+
 .container nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -153,7 +165,18 @@ body {
           backdrop-filter: blur(150px);
 }
 
-.container .user-profile {
+@media (min-width: 768px) {
+  .container .main-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 2rem 0;
+  }
+}
+
+.container .main-grid .user-profile {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -167,23 +190,49 @@ body {
   margin: 2rem 0;
 }
 
-.container .user-profile img {
+@media (min-width: 768px) {
+  .container .main-grid .user-profile {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+}
+
+.container .main-grid .user-profile img {
   border-radius: 10px;
   width: 50%;
   margin: 0 auto;
 }
 
-.container .user-profile button {
+@media (min-width: 768px) {
+  .container .main-grid .user-profile img {
+    width: 100%;
+  }
+}
+
+.container .main-grid .user-profile button {
   width: 50%;
   margin: 1rem auto;
 }
 
-.container .user-profile button a {
+@media (min-width: 768px) {
+  .container .main-grid .user-profile button {
+    width: 100%;
+  }
+}
+
+.container .main-grid .user-profile button a {
   color: inherit;
   text-decoration: none;
 }
 
-.container .profile-info .grid {
+@media (min-width: 768px) {
+  .container .main-grid .profile-info {
+    grid-column: 2/-1;
+  }
+}
+
+.container .main-grid .profile-info .grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
@@ -191,7 +240,7 @@ body {
   gap: 1rem;
 }
 
-.container .profile-info .grid #bio {
+.container .main-grid .profile-info .grid #bio {
   grid-column: 1/-1;
 }
 
@@ -199,6 +248,13 @@ body {
   display: -ms-grid;
   display: grid;
   gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .container .r-grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .container .r-grid .item:hover,
